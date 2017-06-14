@@ -13,7 +13,7 @@ and open the template in the editor.
 }
 @keyframes back-img{
     from {background-color: rgb(30, 208, 112)}
-    to {background-image: url('xbox-one-x.jpg')}
+    to {background-image: url('http://compass.xbox.com/assets/62/08/62089711-329a-40a8-884c-365357013d3c.jpg?n=PS_1920_Mosaic1_img.jpg')}
 }
 html{
     font-family: 'Raleway', sans-serif;
