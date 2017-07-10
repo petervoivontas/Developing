@@ -13,18 +13,18 @@ and open the template in the editor.
 }
 @keyframes xboxx-img{
     from {background-color: rgb(30, 208, 112)}
-    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/xbox-one-x.jpg')}
+    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-x.jpg')}
 }
 @keyframes background-xbx{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/xbox-one-x.jpg')}
+    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-x.jpg')}
     to {background-color: rgb(30, 208, 112)}
 }
 @keyframes xboxs-img{
     from {background-color: rgb(30, 208, 112)}
-    to{background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/xbox-one-s.jpg')}
+    to{background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-s.jpg')}
 }
 @keyframes background-xbs{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/xbox-one-s.jpg')}
+    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-s.jpg')}
     to {background-color: rgb(30, 208, 112)}
 }
 @keyframes ps4-img{
