@@ -29,10 +29,10 @@ and open the template in the editor.
 }
 @keyframes ps4-img{
     from {background-color: rgb(30, 208, 112)}
-    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/ps4-pro.png')}
+    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/64807c18/ps4-pro.png')}
 }
 @keyframes background-pspro{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/d6ab4636/ps4-pro.png')}
+    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/64807c18/ps4-pro.png')}
     to {background-color: rgb(30, 208, 112 )}
 }
 html{
