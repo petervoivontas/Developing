@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2017, 11:45:55 AM
+    Author     : peter
+*/
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.games,
+.equipment{
+    width: 100%;
+    padding: 1em 3em 2em 2em;
+    margin: 0.5em;
+    color: black;
+    border-radius: 0.75em;
+}
+.games{
+    background-color: rgb(108, 108, 108);
+}
+.equipment{
+    background-color: rgb(30, 208, 112); 
+}
+.button{
+    background-color: whitesmoke;
+    padding: 0.75em 1.25em;
+    color: black;
+    border-radius: 0.5em;
+}
+.active{
+    background-color: rgb(114, 153, 132);
+}
+#home:link{
+    color: black;
+    text-decoration: none;
+}
+#home:visited{
+    color: black;
+    text-decoration: none;
+}
+#home:hover{
+    color: black;
+    text-decoration: none;
+}
+#home:active{
+    color: black;
+    text-decoration: none;
+}
