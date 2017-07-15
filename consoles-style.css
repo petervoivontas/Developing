@@ -11,34 +11,34 @@ and open the template in the editor.
     from {background-color: white}
     to {background-color: rgb(30, 208, 112)}
 }
-@keyframes xboxx-img{
-    from {background-color: rgb(30, 208, 112)}
-    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-x.jpg')}
+@keyframes xbox{
+    from {background-color: rgb(30, 208 ,112)}
+    to {background-color: rgb(57, 165, 114)}
 }
-@keyframes background-xbx{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-x.jpg')}
+@keyframes xbox-reverse{
+    from {background-color: rgb(57, 165, 114)}
     to {background-color: rgb(30, 208, 112)}
 }
-@keyframes xboxs-img{
+@keyframes ps4{
     from {background-color: rgb(30, 208, 112)}
-    to{background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-s.jpg')}
+    to{background-color: rgb(32, 64, 209)}
 }
-@keyframes background-xbs{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/43b6449b/xbox-one-s.jpg')}
+@keyframes ps4-reverse{
+    from {background-color: rgb(32, 64, 209)}
     to {background-color: rgb(30, 208, 112)}
 }
-@keyframes ps4-img{
-    from {background-color: rgb(30, 208, 112)}
-    to {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/64807c18/ps4-pro.png')}
+@keyframes ps4toxbox{
+    from {background-color}
+    to {background-color: rgb(57, 165, 114)}
 }
-@keyframes background-pspro{
-    from {background-image: url('https://cdn.rawgit.com/petervoivontas/Developing-GitHub/64807c18/ps4-pro.png')}
-    to {background-color: rgb(30, 208, 112 )}
+@keyframes xboxtops4{
+    from {background-color}
+    to {background-color: rgb(32, 64, 209)}
 }
 html{
     font-family: 'Raleway', sans-serif;
     animation-name: background;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -46,7 +46,8 @@ html{
 .consoles,
 .xbonex-info,
 .xbones-info,
-.ps4-info{
+.ps4-info,
+.ps4s-info{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,7 +56,8 @@ html{
 .ps4,
 .xbonex-info,
 .xbones-info,
-.ps4-info{
+.ps4-info,
+.ps4s-info{
     width: 100%;
     padding: 1em 3em 2em 2em;
     margin: 0.5em;
@@ -66,7 +68,8 @@ html{
 .xbonex-info,
 .xbones-info,
 .ps4,
-.ps4-info{
+.ps4-info,
+.ps4s-info{
     background-color: whitesmoke;
 }
 .button{
@@ -88,7 +91,11 @@ html{
 .graphics,
 .gameplay,
 .community,
-.entertainment{
+.entertainment,
+.look,
+.pshdr,
+.control,
+.family{
     background-color: rgb(108, 108, 108);
     color: white;
     padding: 1em 3em 1em 2em;
