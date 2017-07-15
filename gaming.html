@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>Gaming</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://cdn.rawgit.com/petervoivontas/Developing-GitHub/master/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/petervoivontas/Developing-GitHub/master/home-style.css" id="css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    </head>
+    <body>
+        <a href="" id="home"><h1 id="heading">Gaming</h1></a>
+        <div class="home">
+            <div class="games">
+                <h2>Games</h2>
+                <h3 class="button">Categories</h3>
+                <ul class="sub-cat">
+                    
+                </ul>
+            </div>
+            <div class="equipment">
+                <h2>Equipment</h2>
+                <h3 class="button">Categories</h3>
+                <ul class="sub-cat">
+                    <li class="console-button">Consoles</li>
+                    <li class="pc-button">Gaming PCs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="consoles">
+            <div class="xbone">
+                <h2>Xbox One</h2>
+                <h3 class="button">Expand</h3>
+                <ul class='sub-cat'>
+                    <li class='xbone-x'>Xbox One X</li>
+                    <li class="xbone-s">Xbox One S</li>
+                </ul>
+            </div>
+            <div class='xbonex-info'>
+                <div class="processing">
+                    <p>FASTER PROCESSING</p>
+                    <p>Smoother gameplay</p>
+                    <p>The 8-core Custom AMD CPU is clocked at 2.3GHz to bring enhanced AI, real world detail, and smoother interactions to your gaming.</p>
+                </div>
+                <div class="memory">
+                    <p>MORE MEMORY</p>
+                    <p>Bigger worlds</p>
+                    <p>12GB GDDR5 of graphic memory add speed and power to game performance to enable bigger worlds, further horizons, and quicker load times.</p>
+                </div>
+                <div class="immersive-worlds">
+                    <p>IMMERSIVE WORLDS</p>
+                    <p>Life-like detail</p>
+                    <p>A 6 Teraflop GPU enables 4K environments and characters to become more realistic than ever, with more detail and smoother animations.</p>
+                </div>
+                <div class="memory-bandwith">
+                    <p>MEMORY BANDWIDTH</p>
+                    <p>Faster load times</p>
+                    <p>Game graphics are faster and more detailed with 326 GB/sec memory bandwidth, to keep your gaming momentum flowing.</p>
+                </div>
+            </div>
+            <div class="xbones-info">
+                <div class="hdr">
+                    <p>HIGH DYNAMIC RANGE</p>
+                    <p>Brilliant graphics with High Dynamic Range</p>
+                </div>
+                <div class="resolution">
+                    <p>4K RESOLUTION</p>
+                    <p>Ultra HD Blu-Ray and video streaming</p>
+                </div>
+                <div class="spatial-audio">
+                    <p>SPATIAL AUDIO</p>
+                    <p>Premium Dolby Atmos and DTS:X Audio</p>
+                </div>
+            </div>
+            <div class="ps4">
+                <h2>PlayStation 4</h2>
+                <h3 class="button">Expand</h3>
+                <ul class="sub-cat">
+                    <li class="ps4-pro">PlayStation 4 Pro</li>
+                    <li class="ps4s">PlayStation 4</li>
+                </ul>
+            </div>
+            <div class="ps4-info">
+                <div class="graphics">
+                    <p>SPECTACULAR GRAPHICS</p>
+                    <p>Explore vivid game worlds with rich visuals heightened by PS4 Pro.</p>
+                </div>
+                <div class="gameplay">
+                    <p>ENHANCED GAMEPLAY</p>
+                    <p>Support for faster frame rates delivers super-sharp action for select PS4™ games.</p>
+                </div>
+                <div class="community">
+                    <p>A UNIFIED GAMING COMMUNITY</p>
+                    <p>Compatible with every PS4™ game. Play online with other PS4™ players with PlayStation® Plus.</p>
+                </div>
+                <div class="entertainment">
+                    <p>EXTRAORDINARY ENTERTAINMENT</p>
+                    <p>With up to 4K streaming and 4K auto-upscaling for video content.</p>
+                </div>
+            </div>
+            <div class="ps4s-info">
+                <div class="look">
+                    <p>THE NEW LOOK, SLIMMER PS4</p>
+                    <p>Store your games, apps, screenshots and videos with 500GB and 1TB models – slimmer and lighter than the original PS4 model and available in Jet Black, Glacier White and now stunning Gold and Silver.</p>
+                </div>
+                <div class="pshdr">
+                    <p>VIBRANT HDR GAMING</p>
+                    <p>HDR-enabled PS4 games burst into life with incredible colour and clarity on an HDR TV, delivering a more vibrant, realistic spectrum of colours.</p>
+                </div>
+                <div class="control">
+                    <p>UNPARALLELED CONTROL</p>
+                    <p>The DUALSHOCK 4 wireless controller has been updated with a new look and feel, including a more visible, colourful light bar to put even more of the game into your hands. It’s the most ergonomic, intuitive PlayStation controller we’ve ever designed.</p>
+                </div>
+                <div class="family">
+                    <p>PS4 FOR THE WHOLE FAMILY</p>
+                    <p>The whole family can enjoy PS4 gaming and entertainment together - find out how play can enhance essential skills (as well as being fun) and how you can ensure that younger players stay safe online.</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.rawgit.com/petervoivontas/Developing-GitHub/master/jquery-3.2.1.min.js"></script>
+        <script>
+            function main(){
+                var xbx = 0;
+                var xbs = 0;
+                var ps4pro = 0;
+                var ps4s = 0;
+                var xbox_exp = 0;
+                var ps4_exp = 0;
+                $('.consoles').hide();
+                $('.xbonex-info').hide();
+                $('.xbones-info').hide();
+                $('.ps4-info').hide();
+                $('.ps4s-info').hide();
+                $('.home').hide();
+                $('.home').fadeIn(1000);
+                $('.sub-cat').hide();
+                $('.button').not($('.xbone > .button, .ps4 > .button')).on('click', function() {
+                    $(this).next().slideToggle(400);
+                });
+                $('.console-button').on('click', function() {
+                    $('.home, #heading').fadeOut(1000);
+                    $('#heading').text('Consoles');
+                    $('#css').attr('href', 'https://cdn.rawgit.com/petervoivontas/Developing-GitHub/master/consoles-style.css');
+                    $('.consoles, #heading').fadeIn(1000);
+                    $('.xbone-x').on('click', function() {
+                        $('.xbonex-info').slideToggle(400, function(){
+                            if (xbx % 2 === 0 || xbx === 0){
+                                $('html').css('animation-name', 'xbox');
+                                xbx ++;
+                            } else if (xbx % 2 === 1) {
+                                $('html').css('animation-name', 'xbox-reverse');
+                                xbx ++;
+                            };
+                        });
+                    });
+                    $('.xbone-s').on('click', function() {
+                        $('.xbones-info').slideToggle(400, function(){
+                            if (xbs % 2 === 0 || xbs === 0) {
+                                $('html').css('animation-name', 'xbox');
+                                $('#heading').css('color', 'black');
+                                xbs ++;
+                            } else if (xbs % 2 === 1) {
+                                $('html').css('animation-name', 'xbox-reverse');
+                                $('#heading').css('color', 'black');
+                                xbs ++;
+                            };
+                        });
+                    });
+                    $('.ps4-pro').on('click', function() {
+                        $('.ps4-info').slideToggle(400, function() {
+                            if (ps4pro % 2 === 0 || ps4pro === 0) {
+                                $('html').css('animation-name', 'ps4');
+                                $('#heading').css('color', 'whitesmoke');
+                                ps4pro ++;
+                            } else if (ps4pro % 2 === 1) {
+                                $('html').css('animation-name', 'ps4-reverse');
+                                $('#heading').css('color', 'black');
+                                ps4pro ++;
+                            };
+                        });
+                    });
+                    $('.ps4s').on('click', function() {
+                        $('.ps4s-info').slideToggle(400, function() {
+                            if (ps4s % 2 === 0 || ps4s === 0) {
+                                $('html').css('animation-name', 'ps4');
+                                $('#heading').css('color', 'whitesmoke');
+                                ps4s ++;
+                            } else if (ps4s % 2 === 1) {
+                                $('html').css('animation-name', 'ps4-reverse');
+                                $('html').css('color', 'black');
+                                ps4s ++;
+                                
+                            };
+                        });
+                    });
+                    $('.xbone > .button').on('click', function() {
+                        if (xbox_exp % 2 === 0 || xbox_exp === 0) {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            xbox_exp ++;
+                        } else if (xbox_exp % 2 === 1 && ((xbx % 2 === 1 || xbs % 2 === 1) && (ps4pro % 2 === 1 || ps4s % 2 === 1))) {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            if (xbx % 2 === 1 && (ps4pro % 2 === 1 || ps4s % 2 === 1)) {
+                                var back1 = $('html').css('background-color');
+                                $('html').css('background-color', back1);
+                                $('.xbonex-info').slideToggle(400);
+                                $('html').css('animation-name', 'xboxtops4');
+                                xbx ++;
+                            };
+                            if (xbs % 2 === 1 && (ps4pro % 2 === 1 || ps4s % 2 === 1)) {
+                                var back2 = $('html').css('background-color');
+                                $('html').css('background-color', back2);
+                                $('.xbones-info').slideToggle(400);
+                                $('html').css('animation-name', 'xboxtops4');
+                                xbs ++;
+                            };
+                        } else if (xbox_exp % 2 === 1 && xbx % 2 === 1) {
+                            $('.xbonex-info').slideToggle(400);
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            $('html').css('animation-name', 'xbox-reverse');
+                            xbox_exp ++;
+                            xbx ++;
+                        } else if (xbox_exp % 2 === 1 && xbs % 2 === 1) {
+                            $('.xbones-info').slideToggle(400);
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            $('html').css('animation-name', 'xbox-reverse');
+                            xbox_exp ++;
+                            xbs ++;
+                        } else {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            xbox_exp ++;
+                        };
+                    });
+                    $('.ps4 > .button').on('click', function() {
+                        if (ps4_exp % 2 === 0 || ps4_exp === 0) {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            ps4_exp ++;
+                        } else if (ps4_exp % 2 === 1 && ((xbx % 2 === 1 || xbs % 2 === 1) && (ps4pro % 2 === 1 || ps4s % 2 === 1))) {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            if (ps4pro % 2 === 1 && (xbx % 2 === 1 || xbs % 2 === 1)) {
+                                var back3 = $('html').css('background-color');
+                                $('html').css('background-color', back3);
+                                $('.ps4-info').slideToggle(400);
+                                $('html').css('animation-name', 'ps4toxbox');
+                                ps4pro ++;
+                            };
+                            if (ps4s % 2 === 1 && (xbx % 2 === 1 || xbs % 2 === 1)) {
+                                var back4 = $('html').css('background-color');
+                                $('html').css('background-color', back4);
+                                $('.ps4s-info').slideToggle(400);
+                                $('html').css('animation-name', 'ps4toxbox');
+                                ps4s ++;
+                            };
+                        } else if (ps4_exp % 2 === 1 && ps4pro % 2 === 1) {
+                            $('.ps4-info').slideToggle(400);
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            $('html').css('animation-name', 'ps4-reverse');
+                            ps4_exp ++;
+                            ps4pro ++;
+                        } else if (ps4_exp % 2 === 1 && ps4s % 2 === 1) {
+                            $('.ps4s-info').slideToggle(400);
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            $('html').css('animation-name', 'ps4-reverse');
+                            ps4_exp ++;
+                            ps4s ++;
+                        } else {
+                            $(this).next().slideToggle(400);
+                            $(this).toggleClass('active');
+                            ps4_exp ++;
+                        };
+                    });
+                });
+            }
+            $(document).ready(main);
+        </script>
+    </body>
+</html>
