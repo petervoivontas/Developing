@@ -27,7 +27,7 @@ function main(){
     $('.console-button').on('click', function() {
         $('.home, #heading').fadeOut(1000);
         $('#heading').text('Consoles');
-        $('#css').attr('href', 'consoles-style.css');
+        $('#css').attr('href', 'https://cdn.rawgit.com/petervoivontas/Developing-GitHub/master/consoles-style.css');
         $('.consoles, #heading').fadeIn(1000);
         $('.xbone-x').on('click', function() {
             $('.xbonex-info').slideToggle(400, function(){
