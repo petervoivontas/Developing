@@ -1,5 +1,5 @@
 const apiKey = 'AIzaSyCphjqEn7sVUUe_J-j3u7ilWGtn_KHuV5k';
-const url = 'https://www.google.com/urlshortener/v1/url';
+const url = 'https://www.googleapis.com/urlshortener/v1/url';
 const inputField = $('#inputField');
 const resultField = $('#resultField');
 const expandButton = $('#expandButton');
@@ -26,6 +26,7 @@ function shortenUrl () {
     const urlToShorten = url + '?key=' + apiKey;
     $.ajax({
         url: urlToShorten,
+        type: 'GET',
         data: JSON.stringify({longUrl: inputField.val()}),
         dataType: 'json',
         contentType: 'application/json',
